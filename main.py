@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 # Reading the CSV file
 lwd = pd.read_csv("notes.csv")
 
-# Information printout and user interaction
+print(lwd)
+
+
+
 print("Nigeria is a country on the west side of Africa. It has many natural landmarks and wildlife reserves. It inhabits more than 250 ethnic groups and has more than 500 speaking languages, including English. \n")
 
 input("Press return to continue! \n")
@@ -21,19 +24,21 @@ print("Now, what are some ways to solve this issue? \n")
 
 input("Press return to continue! \n")
 
-print("1.Promoting literacy programs in schools in Nigeria.")
+print("1. Promoting literacy programs in schools in Nigeria.")
 print("2.Fostering the love of learning in children at schools.")
 print("3.Using technology to enhance and promote learning.")
 print("4.Addressing the factors that contribute to low literacy rates.\n")
 
 print("There are many ways to combat illiteracy in countries including Nigeria, and advocating for education is crucial.")
 
-# Preparing data for plotting
+
+
+# data for plotting
 categories = ['Total', 'Male', 'Female']
 values = [lwd['literacy_rate_total'][0], lwd['literacy_rate_male'][0], lwd['literacy_rate_female'][0]]
 colors = ['blue', 'green', 'red']
 
-# Plotting the literacy rates
+# plotting the literacy rates
 plt.figure(figsize=(8, 6))
 plt.bar(categories, values, color=colors)
 
@@ -42,5 +47,6 @@ plt.ylabel('Literacy Rate (%)')
 plt.legend(['Total', 'Male', 'Female'])
 plt.grid(True)
 
-# Show plot
+# showing the plot
 plt.show()
+
