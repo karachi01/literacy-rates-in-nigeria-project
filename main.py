@@ -21,7 +21,7 @@ print("Now, what are some ways to solve this issue? \n")
 
 input("Press return to continue! \n")
 
-print("1. Promoting literacy programs in schools in Nigeria.")
+print("1.Promoting literacy programs in schools in Nigeria.")
 print("2.Fostering the love of learning in children at schools.")
 print("3.Using technology to enhance and promote learning.")
 print("4.Addressing the factors that contribute to low literacy rates.\n")
